@@ -1,0 +1,19 @@
+# Role permissions
+p, admin,  /docs,     GET
+p, admin,  /docs,     POST
+p, admin,  /docs/:id, GET
+p, admin,  /docs/:id, PUT
+p, admin,  /docs/:id, DELETE
+
+p, editor, /docs,     GET
+p, editor, /docs,     POST
+p, editor, /docs/:id, GET
+p, editor, /docs/:id, PUT
+
+p, viewer, /docs,     GET
+p, viewer, /docs/:id, GET
+
+# User → Role assignments
+g, alice, admin
+g, bob,   editor
+g, eve,   viewer
