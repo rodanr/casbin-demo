@@ -8,7 +8,6 @@ p, admin,  /docs/:id, DELETE
 p, editor, /docs,     GET
 p, editor, /docs,     POST
 p, editor, /docs/:id, GET
-p, editor, /docs/:id, PUT
 
 p, viewer, /docs,     GET
 p, viewer, /docs/:id, GET
